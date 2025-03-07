@@ -4,13 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="boilerplate.css" />
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-    
-    <script src="javascript.js"></script>
+
+    <div class="left-side-page">
+        <div class="logo">
+            <img src="pics/odin-lined.png" />
+            <p>Tino</p>
+          </div>
+        <h4 class="picture-credit">Photo by Jon Tyson on Unsplash</h3>
+    </div>
+    <div class="right-side-page">
+        <h1 class="signup-title">This is not a real online service! You know you need something like this in your
+            life
+            to help you realize
+            your deepest reams. Sign up now to get started</h1>
+        <div class="form">
+            <form id="form">
+                <label for="first-name">First Name
+                    <input type="text" name="first-name" required />
+                </label>
+                <label for="last-name">Last Name
+                    <input type="text" name="last-name" />
+                </label>
+                <label for="email">Email
+                    <input type="email" name="email" required />
+                </label>
+                <label for="phone">Phone number
+                    <input type="tel" name="phone" />
+                </label>
+                <label for="password">Password
+                    <input type="password" name="password" required pattern="^.{8,}$"
+                        title="Password must be at least 8 characters long" />
+                </label>
+                <label for="confirm-password">Confirm password
+                    <input type="password" name="confirm-password" required pattern="^.{8,}$"
+                        title="Password must be at least 8 characters long" />
+                </label>
+            </form>
+        </div>
+        <button type="submit" form="form">Create Account</button>
+        <p class="log-in">Already have an account? <a href="">Log in</a></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
